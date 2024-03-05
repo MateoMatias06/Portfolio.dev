@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+import Badge from '../components/Badge.astro';
+import Linkedin from '../components/Linkedin.astro';
+import Github from '../components/Github.astro';
+import Socialpill from '../components/Socialpill.astro';
+import Mail from '../components/Mail.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Briefcase from '../components/Briefcase.astro';
+import Footer from '../components/Footer.astro';
+import Code from '../components/Code.astro';
+import Projects from '../components/Projects.astro';
+import User from '../components/User.astro';
+import About from '../components/About.astro';
+
+---
+
+<Layout title="Mateo Matias Portfolio - FullStack Web Developer +2 years of experience" description='Hire Mateo Matias to create a Web app. Web developer fullstack.'>
+	<main class="px-4">
+		<SectionContainer id="home" class="section py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
+		 <div class="max-w-xl">
+			<div class="flex gap-4 mb-4 items-center">
+				<img class="rounded-full size-16 mb-4 shadow-lg" src="FOTOMIA.jpeg" alt="">
+				<a href="https://www.linkedin.com/in/mateo-matias-497936270" target="_blank" rel="noopener" class="flex items-center transition md:justify-center md:hover:scale-105">
+					<Badge>Available for hire</Badge>
+				</a>
+			</div>
+		 </div>
+		
+		<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex  flex-row gap-x-4 pb-6 lg:pb-10">Hey, I'm Mateo Matias
+			
+		</h1>
+		<h2 class=" text-xl   text-wrap max-w-[700px]"><span class="opacity-80">+2 years of experience.</span> <span class="text-[#D63484] opacity-100">FullStack Web Developer.</span> <span class="opacity-80">From Buenos Aires, Argentina.</span><span class="opacity-70"> Currently studying at The National University of La Matanza, AR</span></h2>
+
+		<nav class="flex gap-4 mt-8 flex-wrap ">
+
+			<Socialpill href="https://www.linkedin.com/in/mateo-matias-497936270">
+				<Linkedin class=" size-4 md:size-6"/>
+				LinkedIn
+			</Socialpill>
+			
+			<Socialpill href="https://github.com/MateoMatias06">
+				<Github class="size-4 md:size-6"/>
+				Github
+			</Socialpill>
+
+			<Socialpill href="https://mail.google.com/mail/?view=cm&to=mateomatias1304@gmail.com">
+				<Mail class="size-4 md:size-6"/>
+				mateomatias1304@gmail.com
+			</Socialpill>
+		</nav>
+
+		</SectionContainer>
+		<div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
+		<SectionContainer id="experience" >
+			
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Briefcase class="size-7" />
+				Work Experience
+			</h2>
+			<Experience />
+			
+		</SectionContainer>
+		<div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
+		<SectionContainer id="projects" >
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Code class="size-7" />
+				Projects
+			</h2>
+			<Projects />
+		</SectionContainer>
+		<div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
+		<SectionContainer id="about" >
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<User class="size-7" />
+				About Me
+			</h2>
+			<About />
+		</SectionContainer>
+
+	</main>
+</Layout>
+
