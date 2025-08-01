@@ -8,7 +8,12 @@ const navItems = [
     url: "/#home",
   },
   {
-    title: "Eperience",
+    title: "About",
+    label: "sobre-mi",
+    url: "/#about",
+  },
+  {
+    title: "Experience",
     label: "experiencia",
     url: "/#experience",
   },
@@ -16,11 +21,6 @@ const navItems = [
     title: "Projects",
     label: "proyectos",
     url: "/#projects",
-  },
-  {
-    title: "About",
-    label: "sobre-mi",
-    url: "/#about",
   },
   {
     title: "Contact",
@@ -34,7 +34,7 @@ const navItems = [
   class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
 >
   <nav
-    class="flex px-3 text-sm font-medium rounded-full text-white dark:text-white justify-center items-center"
+    class="flex px-3 text-sm font-medium rounded-full text-gray dark:text-white justify-center items-center"
   >
     {
       navItems.map((link) => (

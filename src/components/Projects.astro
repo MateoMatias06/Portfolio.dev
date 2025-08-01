@@ -32,7 +32,7 @@ const PROJECTS = [
     description:
       "This is my personal Portfolio created from scratch with Astro and Tailwind CSS. Inspired by Midudev.",
     link: "https://mateomatiasportfolio.netlify.app",
-    github: "-",
+    github: "https://github.com/MateoMatias06/Portfolio.dev",
     image: "/projects/screen2.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
@@ -69,7 +69,7 @@ const PROJECTS = [
           ))}
         </ul>
 
-      <div class="mt-2 text-white dark:text-white">{description}</div>
+      <div class="mt-2 text-gray   dark:text-white">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
           {github && (
             <LinkButton href={github}>
